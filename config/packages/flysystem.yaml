@@ -1,0 +1,10 @@
+flysystem:
+    storages:
+        tmp.storage:
+            adapter: 'local'
+            options:
+                directory: '/tmp'
+        local.storage:
+            adapter: 'local'
+            options:
+                directory: '%kernel.project_dir%%env(FILE_DIR)%'
